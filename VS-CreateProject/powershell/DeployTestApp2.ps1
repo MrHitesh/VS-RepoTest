@@ -64,7 +64,7 @@
 	jfrog rt c jenkins-server-1 --url=http://localhost:8081/artifactory/ --apikey=AKCp5bBNL65PgEJz1ZKE8LMxv1V2NwHJqkFpLiVSCsmRjdr4wPjUuVRHhZRqNspGsd1k64tS3
 	jfrog rt use jenkins-server-1
 	
-	
+	frog rt download msbuild-local/MsbuildLibrary/bin/Debug/MsbuildLibrary.dll dependencies\ --flat=true --build-name=$AppName --build-number=$BuildNumber
 	jfrog rt upload $SiteFolderPathWithEscape msbuild-local/$AppName/ --flat=false --build-name=$AppName --build-number=$BuildNumber
 	jfrog rt bce $AppName $BuildNumber
 	jfrog rt bag $AppName $BuildNumber "$JenkinsWorkspace/$AppName"

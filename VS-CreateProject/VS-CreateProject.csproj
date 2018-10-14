@@ -96,6 +96,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="powershell\DeployTestApp2.ps1" />
     <None Include="Properties\PublishProfiles\TestApp2.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -130,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="dependencies\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
